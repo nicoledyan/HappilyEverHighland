@@ -1,1 +1,85 @@
-<h1>The Wedding of Nicole and Kelly</h1>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+<!--<script>
+    var $form = $('form#test-form'),
+        url = 'https://script.google.com/macros/s/AKfycbwzUJQvohsPIOay2XGniiFMFmnHUo2OCvAK-CPAUJUO_LKjCPs/exec'
+
+    $('#submit-form').on('click', function (e) {
+        e.preventDefault();
+
+        $.ajax({
+            type: "GET",
+            url: url,
+            dataType: "json",
+            data: $form.serializeObject(),
+            success: function (rooms) {
+                alert("hello");
+            }
+        });
+
+        //    var jqxhr = $.ajax({
+        //        url: url,
+        //        method: "GET",
+        //        dataType: "json",
+        //        data: $form.serializeObject()
+        //    }).success(
+        //    // do something
+        //  );
+        //})
+</script>-->
+        <html>
+            <body>
+
+                <h1>The Wedding of Nicole and Kelly</h1>
+
+                <form id="test-form">
+
+                    <div>
+                        <label>First Name</label>
+                        <input type="text" name="FirstName" placeholder="First Name" />
+                    </div>
+
+                    <!--<div>
+                        <label>Field 2</label>
+                        <input type="text" name="form_field_2" placeholder="Field 2" />
+                    </div>
+
+                    <div>
+                        <label>Field 3</label>
+                        <input type="text" name="form_field_3" placeholder="Field 3" />
+                    </div>
+
+                    <div>
+                        <label>Field 4</label>
+                        <input type="text" name="form_field_4" placeholder="Field 4" />
+                    </div>-->
+
+        <div>
+                        <button type="submit" id="submit-form" onclick="myFunction()">Submit</button>
+                    </div>
+
+                </form>
+
+            </body>
+        </html>
+
+
+        <script>
+            function myFunction() {
+                    var $form = $('#test-form'),
+        url = 'https://script.google.com/macros/s/AKfycbwzUJQvohsPIOay2XGniiFMFmnHUo2OCvAK-CPAUJUO_LKjCPs/exec'
+                    $.ajax({
+            type: "GET",
+            url: url,
+            dataType: "json",
+            data: $form.serialize()
+        });
+            alert("submitted");
+            }
+        </script>
