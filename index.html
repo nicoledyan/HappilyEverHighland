@@ -4,68 +4,55 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Bad+Script|Lobster+Two|Open+Sans&display=swap" rel="stylesheet">
+<style>
+    body {
+        background-color: #163242;
+        /*background-image: linear-gradient(to bottom right, #163242, #672527);*/
+        /*#672527*/
+        /*#D5ACAD*/
+        /*#163242*/
+    }
+    .container{
+        background-color: #D5ACAD;
+          border-radius: 25px;
+            position: fixed; /* or absolute */
+  top: 25%;
+  left: 50%;
+   transform: translate(-50%, -50%);
 
+    }
+    h1 {
+        font-family: 'Lobster Two', cursive;
+    }
 
-<!--<script>
-    var $form = $('form#test-form'),
-        url = 'https://script.google.com/macros/s/AKfycbwzUJQvohsPIOay2XGniiFMFmnHUo2OCvAK-CPAUJUO_LKjCPs/exec'
-
-    $('#submit-form').on('click', function (e) {
-        e.preventDefault();
-
-        $.ajax({
-            type: "GET",
-            url: url,
-            dataType: "json",
-            data: $form.serializeObject(),
-            success: function (rooms) {
-                alert("hello");
-            }
-        });
-
-        //    var jqxhr = $.ajax({
-        //        url: url,
-        //        method: "GET",
-        //        dataType: "json",
-        //        data: $form.serializeObject()
-        //    }).success(
-        //    // do something
-        //  );
-        //})
-</script>-->
+    div {
+        font-family: 'Open Sans', sans-serif;
+    }
+</style>
         <html>
             <body>
+                <div class="container col-sm-6">
+                    <h1 class="text-center">RSVP to the Wedding of Nicole &amp; Kelly</h1>
+                    <div class="text-center">#HappilyEverHighland</div>
+                    <form id="test-form" style="padding-top:10px;">
 
-                <h1>The Wedding of Nicole and Kelly</h1>
+                        <div>
+                            <label>First Name</label>
+                            <input type="text" name="FirstName" placeholder="First Name" />
+                        </div>
 
-                <form id="test-form">
+                        <div>
+                            <label>Last Name</label>
+                            <input type="text" name="LastName" placeholder="Last Name" />
+                        </div>
 
-                    <div>
-                        <label>First Name</label>
-                        <input type="text" name="FirstName" placeholder="First Name" />
-                    </div>
+                        <div class="text-center">
+                            <button class="btn btn-defualt" type="submit" id="submit-form" onclick="myFunction()">RSVP</button>
+                        </div>
 
-                    <!--<div>
-                        <label>Field 2</label>
-                        <input type="text" name="form_field_2" placeholder="Field 2" />
-                    </div>
-
-                    <div>
-                        <label>Field 3</label>
-                        <input type="text" name="form_field_3" placeholder="Field 3" />
-                    </div>
-
-                    <div>
-                        <label>Field 4</label>
-                        <input type="text" name="form_field_4" placeholder="Field 4" />
-                    </div>-->
-
-        <div>
-                        <button type="submit" id="submit-form" onclick="myFunction()">Submit</button>
-                    </div>
-
-                </form>
-
+                    </form>
+                </div>
             </body>
         </html>
 
